@@ -1,0 +1,198 @@
+.feedback-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 12% 22%, rgba(52, 191, 255, 0.08), transparent 20%),
+        radial-gradient(circle at 86% 70%, rgba(52, 191, 255, 0.08), transparent 22%),
+        linear-gradient(180deg, #05080b 0%, #081017 55%, #06090d 100%);
+    color: #fff;
+    padding: 48px 0;
+}
+
+.feedback-page__container {
+    width: min(900px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.feedback-page__eyebrow {
+    margin: 0 0 8px;
+    color: #8fe4ff;
+    font-size: 14px;
+}
+
+.feedback-page h1 {
+    margin: 0 0 12px;
+    font-size: 44px;
+    font-family: var(--heading);
+}
+
+.feedback-page__subtitle {
+    margin: 0 0 28px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 16px;
+    max-width: 700px;
+}
+
+.feedback-card {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.feedback-card textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-family: var(--sans);
+    outline: none;
+}
+
+.feedback-card textarea::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.feedback-card textarea:focus {
+    border-color: rgba(52, 191, 255, 0.45);
+    box-shadow: 0 0 0 3px rgba(52, 191, 255, 0.08);
+}
+
+.feedback-card button {
+    margin-top: 16px;
+    min-height: 48px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #1d83b9, #329ac0);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.feedback-card button:hover {
+    transform: translateY(-2px);
+}
+
+.feedback-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.feedback-controls label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 700;
+}
+
+.feedback-controls select {
+    height: 46px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+    padding: 0 14px;
+    outline: none;
+}
+
+.feedback-card button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.feedback-history {
+    margin-top: 34px;
+}
+
+.feedback-history h2 {
+    margin: 0 0 18px;
+    font-size: 28px;
+}
+
+.feedback-history-card {
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 14px;
+}
+
+.feedback-history-card__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.feedback-history-card__top span {
+    color: #8fe4ff;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.feedback-history-card__top b {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(52, 191, 255, 0.12);
+    color: #8fe4ff;
+    text-transform: capitalize;
+}
+
+.feedback-history-card p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+.feedback-history-card small {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.feedback-admin-reply {
+    margin: 14px 0;
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(52, 191, 255, 0.08);
+    border: 1px solid rgba(52, 191, 255, 0.18);
+}
+
+.feedback-admin-reply p {
+    margin: 6px 0 0;
+}
+
+.feedback-empty {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 650px) {
+    .feedback-controls {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feedback-controls select {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.feedback-controls select option {
+    background: #101820;
+    color: #ffffff;
+}
+
+.feedback-controls select option:hover {
+    background: #1e90ff;
+    color: #ffffff;
+}

@@ -1,0 +1,17 @@
+05.04.26
+создал front начал работу с home.jsx и napoleon.jsx
+
+06.04.26
+доработал homepg и browse pg + стили
+
+mongo db atlas info:
+password: ks13YWrc0qBvaM4C
+username: watchlyAdmin
+
+
+npm install mongodb
+
+mongodb+srv://watchlyAdmin:<db_password>@watchly1.fuwlqzz.mongodb.net/?appName=Watchly1
+
+17.06.26 
+дальше как то было лень все это записывать но в целом реализовал основные идеи 

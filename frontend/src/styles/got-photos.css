@@ -1,0 +1,21 @@
+.got-gallery {
+    min-height: 100vh;
+    padding: 60px;
+    background: var(--page-bg);
+}
+
+.got-gallery h1 {
+    color: var(--text-main);
+    margin-bottom: 30px;
+}
+
+.got-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.got-gallery__grid img {
+    width: 100%;
+    border-radius: 16px;
+}
